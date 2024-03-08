@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoggingController {
     Logger logger = LoggerFactory.getLogger(LoggingController.class);
+    
     @RequestMapping("/")
     public String index() {
         logger.trace("A TRACE Message");
